@@ -1,4 +1,5 @@
 import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -30,6 +31,7 @@ public class Weather {
         }
         return currentInstance;
     }
+
     //Метод возвращающий текущую погоду
     public String currentWeather(Float lat, Float lon) throws IOException {
         String cityFound;
@@ -62,6 +64,7 @@ public class Weather {
         }
         return responseToUser;
     }
+
     //Метод возвращает погоду на ближайшие сутки
     public String forecastWeather(Float lat, Float lon) throws IOException {
         String cityFound;
@@ -92,6 +95,7 @@ public class Weather {
 
         return responseToUser;
     }
+
     //Метод конвертирует список погоды в строку
     private String convertWeatherToString(JSONObject jsonObject) {
         String responseToUser = "";

@@ -15,7 +15,7 @@ public class WeatherShedule extends TimerTask {
         System.out.println("-------------------------------------------------------");
     }
 
-    private void sendWeather(){
+    private void sendWeather() {
 //
 //        Database database = new Database();
 //
